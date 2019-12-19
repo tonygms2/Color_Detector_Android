@@ -24,6 +24,7 @@
         android:layout_width="match_parent"
         android:background="@android:color/holo_blue_dark"
         android:textColor="@android:color/white"
-        android:text="Camera"/>
+        android:text="Camera"
+        android:onClick="takeImage"/>
 
 </LinearLayout>
