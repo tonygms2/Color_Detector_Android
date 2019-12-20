@@ -5,26 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:weightSum="10"
-    android:orientation="vertical"
-    android:paddingTop="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingBottom="16dp">
+    android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/keepImageHere"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="9"
-        android:id="@+id/imageView"/>
+        android:layout_height="560dp"
+        android:background="@android:color/white" />
+
     <Button
-        android:id="@+id/buttonCamera"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonTakePhoto"
+        android:layout_width="373dp"
+        android:layout_height="64dp"
+        android:layout_margin="20dp"
         android:background="@android:color/holo_blue_dark"
+        android:onClick="takePhoto"
+        android:text="Capture a Photo"
         android:textColor="@android:color/white"
-        android:text="Camera"
-        android:onClick="takeImage"/>
+        android:textSize="20sp" />
+
 
 </LinearLayout>
